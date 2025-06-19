@@ -4,32 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./svg/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-  <nav>
-    <div class="nav__derecha">
-      <div></div> <!-- preguntar al profe sobre los error en los svg-->
-      <div></div>
+  <nav class="flex flex-row justify-between items-center bg-gray-200">
+    <div class=" flex gab-[10px] justify-center items-center gap-[10px]"> <!--nav__derecha-->
+      <div class="w-10 h-10"> <img src="./svg/logo.svg" alt=""></div>
+      <div class="flex justify-center items-center bg-gray-500 rounded-full w-16 h-16"><span class="material-symbols-outlined">home</span></div>
       <div>
         <label for=""></label>
         <input placeholder="¿Que quieres reproducir?" type="text">
       </div>
     </div>
     <div style="display: none;">
-        <label for=""></label>
-        <input placeholder="¿Que quieres reproducir?" type="text">
+      <label for=""></label>
+      <input placeholder="¿Que quieres reproducir?" type="text">
     </div> <!--aca va la seachbar para ocualtar-->
-    <div class="na__izquierda">
+    <div class="flex justify-center items-center gap-[15px]"> <!--nav__izquierda-->
       <p>Premium</p>
       <p>Ayuda</p>
       <p>Descargar</p>
       <p>|</p>
-      <div>
-        <p>svg</p>
+      <div class="flex justify-center items-center">
+        <span class="material-symbols-outlined">arrow_circle_down</span>
         <p>Instalar Aplicacion</p>
       </div>
       <p> Registrate</p>
-      <button>
+      <button class="bg-white p-7px rounded-[15px] ">
         <p>
           Iniciar sesión
         </p>
