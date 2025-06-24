@@ -40,8 +40,8 @@
       </div>
     </div>
   </nav>
-  <main class="grid grid-cols-[20%_80%]  gap-2">
-    <aside class="bg-[rgb(18,18,18,1)] rounded-[5px] px[10px] mx-[5px]">
+  <main class="flex gap-2 lg:grid grid-cols-[20%_80%] gap-2">
+    <aside class="lg:bg-[rgb(18,18,18,1)] rounded-[5px] px[10px] mx-[5px]">
       <div>
         <div class="flex justify-between p-[15px] mb-7">
           <h2>Tu Biblioteca</h2>
@@ -79,9 +79,9 @@
           <h2 class="text-[30px]">Canciones del momento</h2>
           <p>mostrar todo</p>
         </div>
-        <div class="flex flex-row gap-[15px] ">
+        <div class="flex flex-row gap-[15px]">
           <div>
-            <img class="w-[450px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02701df427a61dc4eb670a6cd9" alt="">
+            <img class="w-min-[450px] w-[3rem] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02701df427a61dc4eb670a6cd9" alt="">
             <h3>la culpa (track 11)</h3>
             <p>Alleh,Yorghaki</p>
           </div>
@@ -96,7 +96,7 @@
             <p>Ovy On The Drums, Quevedo, Beéle</p>
           </div>
           <div>
-            <img class="w-[450px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0243e5cd64457274893643336d" alt="">
+            <img class="w-min-[450px] w-[450px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0243e5cd64457274893643336d" alt="">
             <h3>Mi Viejo</h3>
             <p>Piero</p>
           </div>
@@ -106,7 +106,7 @@
             <p>j-hope, GloRilla</p>
           </div>
           <div>
-            <img class="w-[450px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
+            <img class="w-min-[450px] w-[450px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
             <h3>top diesel</h3>
             <p>beéle</p>
           </div>
@@ -122,7 +122,7 @@
           <h2 class="text-[30px]">Artistas populares</h2>
           <p>mostrar todo</p>
         </div>
-        <div class="flex flex-row gap-[20px] items-center">
+        <div class="flex flex-row gap-[20px] px-[5px] items-center">
           <div>
             <img class="w-[175px] rounded-full" src="https://i.scdn.co/image/ab6761610000517481f47f44084e0a09b5f0fa13" alt="">
             <h2>Bad Bunny</h2>
@@ -153,10 +153,68 @@
             <h2>Mora</h2>
             <p>Artista</p>
           </div>
+          <div>
+            <img class="w-[175px] rounded-full" src="https://i.scdn.co/image/ab676161000051743b02770b21517dc3a03e340d" alt="">
+            <h2>Danny Ocean</h2>
+            <p>Artista</p>
+          </div>
         </div>
+        <section class="overflow-x-scroll">
+          <div class="flex justify-between items-center p-[10px]">
+            <h2 class="text-[30px]">Álbunes y sencillos populares</h2>
+            <p>mostrar todo</p>
+          </div>
+          <div class="flex flex-row gap-[15px]">
+            <div>
+              <img class="w-min-[550px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02bbd45c8d36e0e045ef640411" alt="bad Bunny">
+              <h3>deBÍ TiRAR MáS FOToS</h3>
+              <p>bad Bunny</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
+              <h3>BORONDO</h3>
+              <p>beéle</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="" alt="">
+              <h3></h3>
+              <p>Artista</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="" alt="">
+              <h3></h3>
+              <p>Artista</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="" alt="">
+              <h3></h3>
+              <p>Artista</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="" alt="">
+              <h3></h3>
+              <p>Artista</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="" alt="">
+              <h3></h3>
+              <p>Artista</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="" alt="">
+              <h3></h3>
+              <p>Artista</p>
+            </div>
+            <div>
+              <img class="w-[450px] rounded-[10px]" src="" alt="">
+              <h3></h3>
+              <p>Artista</p>
+            </div>
+          </div>
+        </section>
       </section>
       <footer>
-        <div class="grid grid-cols-5 mt-[10px] gap-5">
+        <div class="grid grid-cols-5 mt-[10px] gap-5 border-solid border-color[rgb(31,31,31,1)]">
           <div>
             <p>Compañia</p>
             <p>Acerca de</p>
