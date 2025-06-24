@@ -4,63 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./svg/styles.css">
+  <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="text-stone-400 bg-black">
-  <nav class="flex flex-row justify-between items-center py-[2px]">
+  <nav class="flex flex-row justify-between items-center m-[2px]">
     <div class=" flex justify-center items-center gap-[7px] pl-[7px]"> <!--nav__derecha-->
       <div class="w-10 h-10"> <img src="./svg/logo.svg" alt=""></div>
       <div class="flex justify-center items-center  rounded-full w-16 h-16 "><span class="material-symbols-outlined">home</span></div>
-      <div class=" flex items-center bg-[rgb(31,31,31,1)] gap-[10px] rounded-[20px] p-[10px] ">
+      <div class="flex items-center bg-[rgb(31,31,31,1)] gap-[10px] rounded-[20px] p-[10px]">
         <span class="material-symbols-outlined">search</span>
-        <input class="flex items-start border-none pr-[150px]" placeholder="¿Que quieres reproducir?" type="text">
-        <p>|</p>
-        <span class="material-symbols-outlined">web_stories</span>
+        <input class="hidden md:flex md:items-start md:border-none lg:pr-[150px]" placeholder="¿Que quieres reproducir?" type="text">
+        <p class="hidden">|</p>
+        <div class="hidden md:flex"><span class="material-symbols-outlined">web_stories</span></div>
       </div>
     </div>
-    <div style="display: none;">
-      <input placeholder="¿Que quieres reproducir?" type="text">
-    </div> <!--aca va la seachbar para ocualtar-->
     <div class="flex justify-center items-center gap-[10px]"> <!--nav__izquierda-->
-      <p>Premium</p>
-      <p>Ayuda</p>
-      <p>Descargar</p>
-      <p>|</p>
-    <div class="flex justify-center items-center gap-[30px]">
-      <div class="flex justify-center items-center gap-[5px]">
-        <span class="material-symbols-outlined">arrow_circle_down</span>
-        <p>Instalar Aplicacion</p>
+      <div class="hidden lg:flex lg:justify-center lg:items-center lg:gap-[10px]">
+        <p>Premium</p>
+        <p>Ayuda</p>
+        <p>Descargar</p>
+        <p>|</p>
       </div>
-      <p>Registrate</p>
-      <button class="bg-white p-[12px] px-[30px] text-black rounded-[25px] ">
-        <p>Iniciar sesión</p>
-      </button>
+      <div class="flex justify-center items-center gap-[30px]">
+        <div class="flex justify-center items-center gap-[5px]">
+          <span class="material-symbols-outlined">arrow_circle_down</span>
+          <p>Instalar Aplicacion</p>
+        </div>
+        <p>Registrate</p>
+        <button class="bg-white p-[12px] px-[36px] md:py-[10px] md:px-[36px] text-black rounded-[25px] ">
+          <p>Iniciar sesión</p>
+        </button>
       </div>
     </div>
   </nav>
-  <main class="flex gap-2 lg:grid grid-cols-[20%_80%] gap-2">
-    <aside class="lg:bg-[rgb(18,18,18,1)] rounded-[5px] px[10px] mx-[5px]">
-      <div>
-        <div class="flex justify-between p-[15px] mb-7">
-          <h2>Tu Biblioteca</h2>
-          <span class="material-symbols-outlined">add_2</span>
-        </div>
-        <div>
-          <div>
-            <h2>Crea tu primera playlist</h2>
-            <p>!Es muy fácil¡ Te vamos a ayudar</p>
-            <button>Crear playlist</button>
+  <div class="flex absolute bottom-0 right-0 left-0 text-white justify-between items-center p-[5px] py-[10px] pr-[30px] bg-linear-to-r from-[rgb(175,40,150,1)] to-[rgb(80,155,245,1)]">
+    <div>
+      <p>Muestra de Spotify</p>
+      <p class="hidden md:inline">Registrate para acceder a canciones y podcast ilimitados con algunos anuncios. No necesitas tarjeta de crédito</p>
+    </div>
+    <div class="flex justify-center bg-white p-[12px] px-[36px] md:px-[36px] text-black rounded-[25px]">
+      <button>Registrate gratis</button>
+    </div>
+  </div>
+  <main class="flex gap-1 md:grid grid-cols-[25%_75%] gap-1">
+    <section class=" md:bg-[rgb(18,18,18,1)] md:rounded-[5px] md:px[3px] md:ml-[3px] md:gap-2">
+      <div class="md:text-white">
+        <div class="md:flex md:justify-between md:p-[15px] md:mb-7">
+          <h2 class="hidden md:inline">Tu Biblioteca</h2>
+          <div class="hidden md:inline">
+            <span class="material-symbols-outlined">add_2</span>
           </div>
-          <div>
+        </div>
+        <div class="md:flex md:flex-col md:px-[10px] md:gap-[20px]">
+          <div class="hidden md:flex md:flex-col md:items-start md:bg-[rgb(41,41,41,1)] md:rounded-[9px] md:p-4 md:gap-2">
+            <h2>Crea tu primera playlist</h2>
+            <p class=" md:text-[13px]">!Es muy fácil¡ Te vamos a ayudar</p>
+            <button class="md:bg-white md:p-[2px] md:px-[10px] md:text-black md:rounded-[25px] md:mt-3">Crear playlist</button>
+          </div>
+          <div class="hidden md:flex md:flex-col md:items-start md:bg-[rgb(41,41,41,1)] md:rounded-[9px] md:p-4 md:gap-2">
             <h2>Busquemos algunos podcast para seguir</h2>
-            <p> Te mantendremos al tanto de los nuevos episodios.</p>
-            <button>explorar podcast</button>
+            <p class="md:text-[13px]"> Te mantendremos al tanto de los nuevos episodios.</p>
+            <button class="md:bg-white md:p-[2px] md:px-[10px] md:text-black md:rounded-[25px] md:mt-3">explorar podcast</button>
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-3">
+      <div class="hidden md:grid md:grid-cols-3 md:mt-20 md:text-[10px] md:px-[15px] md:gap-2">
         <p>Legal</p>
         <p>Seguridad y centro de privacidad</p>
         <p>Politica de privacidad</p>
@@ -69,152 +79,152 @@
         <p>Accesibilidad</p>
         <p>Cookies</p>
       </div>
-      <div>
-        <button>Español de Latinoamerica</button>
+      <div class="hidden md:flex md:bg-[rgb(41,41,41,1)] md:rounded-[25px] mr-[100px] ml-[20px]  md:mt-10 ">
+        <button class="flex justify-center items-center p-[5px]  "><span class="material-symbols-outlined">language</span>Español de Latinoamerica</button>
       </div>
-    </aside>
-    <section class="flex flex-col overflow-y-scroll px-[20px] bg-[rgb(18,18,18,1)] rounded-[5px]">
-      <section class="overflow-x-scroll mb-10">
+    </section>
+    <section class="flex flex-col min-h-[450px] h-[625px] overflow-y-scroll pl-[10px]  bg-[rgb(18,18,18,1)] rounded-[5px] contenedor">
+      <section class="mb-10">
         <div class="flex justify-between items-center p-[10px]">
           <h2 class="text-[30px]">Canciones del momento</h2>
           <p>mostrar todo</p>
         </div>
-        <div class="flex flex-row gap-[15px]">
+        <div class="flex flex-row gap-[15px] overflow-x-scroll contenedor">
           <div>
-            <img class="w-min-[28rem] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02701df427a61dc4eb670a6cd9" alt="">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02701df427a61dc4eb670a6cd9" alt="">
             <h3>la culpa (track 11)</h3>
             <p>Alleh,Yorghaki</p>
           </div>
           <div>
-            <img class="w-min-[28rem] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e025ecdb62da0b88c3e0091cae7" alt="">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e025ecdb62da0b88c3e0091cae7" alt="">
             <h3>Mi Viejo</h3>
             <p>Vicente Fernández</p>
           </div>
           <div>
-            <img class="w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e027e3722344b0226b81ae8b50c" alt="">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e027e3722344b0226b81ae8b50c" alt="">
             <h3>YO y TÚ</h3>
             <p>Ovy On The Drums, Quevedo, Beéle</p>
           </div>
           <div>
-            <img class="w-min-[450px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0243e5cd64457274893643336d" alt="">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0243e5cd64457274893643336d" alt="">
             <h3>Mi Viejo</h3>
             <p>Piero</p>
           </div>
           <div>
-            <img class="w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02d4d5c6bf0536bc4df8cfca2f" alt="">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02d4d5c6bf0536bc4df8cfca2f" alt="">
             <h3>Killin' It Girl (feat. GloRilla)</h3>
             <p>j-hope, GloRilla</p>
           </div>
           <div>
-            <img class="w-min-[100%] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
             <h3>top diesel</h3>
             <p>beéle</p>
           </div>
           <div>
-            <img class="w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02071805b326f22662cda09357" alt="">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02071805b326f22662cda09357" alt="">
             <h3>LOKENECESITAS</h3>
             <p>SAIKO, Omar Courtz</p>
           </div>
         </div>
       </section>
-      <section class="overflow-x-scroll  mb-10">
+      <section class=" mb-10">
         <div class="flex justify-between items-center p-[10px]">
           <h2 class="text-[30px]">Artistas populares</h2>
           <p>mostrar todo</p>
         </div>
-        <div class="flex flex-row gap-[20px] px-[5px] items-center">
+        <div class="flex flex-row gap-[20px] px-[5px] items-center overflow-x-scroll contenedor">
           <div>
-            <img class="w-[100%] rounded-full" src="https://i.scdn.co/image/ab6761610000517481f47f44084e0a09b5f0fa13" alt="">
+            <img class="min-w-[150px] w-[95%] rounded-full" src="https://i.scdn.co/image/ab6761610000517481f47f44084e0a09b5f0fa13" alt="">
             <h2>Bad Bunny</h2>
             <p>Artista</p>
           </div>
           <div>
-            <img class="w-[100%] rounded-full" src="https://i.scdn.co/image/ab6761610000517466041ce9eb4497057cbc3496" alt="">
+            <img class="min-w-[150px] w-[95%] rounded-full" src="https://i.scdn.co/image/ab6761610000517466041ce9eb4497057cbc3496" alt="">
             <h2>KAROL G</h2>
             <p>Artista</p>
             </div>
           <div>
-            <img class="w-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051745b50fae60980240b4ebd7808" alt="">
+            <img class="min-w-[150px] w-[95%] rounded-full" src="https://i.scdn.co/image/ab676161000051745b50fae60980240b4ebd7808" alt="">
             <h2>Rauw Alejandro</h2>
             <p>Artista</p>
           </div>
           <div>
-            <img class="w-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051748e10d05db45e77a86256fc5d" alt="">
+            <img class="min-w-[150px] w-[95%] rounded-full" src="https://i.scdn.co/image/ab676161000051748e10d05db45e77a86256fc5d" alt="">
             <h2>Beéle</h2>
             <p>Artista</p>
           </div>
           <div>
-            <img class="w-[100%]  rounded-full" src="https://i.scdn.co/image/ab67616100005174961f8d198c115a5442c03e0b" alt="">
-            <h2>Feid</h2>
+            <img class="min-w-[150px] min-h-[120px] w-[98%] h-[80%] rounded-full" src="https://i.scdn.co/image/ab676161000051744a350b04a3f9bb77a30b004e" alt="">
+            <h2>J Balvin</h2>
             <p>Artista</p>
           </div>
           <div>
-            <img class="w-[100%] rounded-full" src="https://i.scdn.co/image/ab67616100005174e6252cc367480d8fe43e711f" alt="">
+            <img class="min-w-[125px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab67616100005174e6252cc367480d8fe43e711f" alt="">
             <h2>Mora</h2>
             <p>Artista</p>
           </div>
           <div>
-            <img class="w-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051743b02770b21517dc3a03e340d" alt="">
+            <img class="min-w-[125px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051743b02770b21517dc3a03e340d" alt="">
             <h2>Danny Ocean</h2>
             <p>Artista</p>
           </div>
         </div>
-        <section class="overflow-x-scroll">
+        <section class=" mt-10">
           <div class="flex justify-between items-center p-[10px]">
             <h2 class="text-[30px]">Álbunes y sencillos populares</h2>
             <p>mostrar todo</p>
           </div>
-          <div class="flex flex-row gap-[15px]">
+          <div class="flex flex-row gap-[15px] overflow-x-scroll contenedor" >
             <div>
-              <img class="w-min-[550px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02bbd45c8d36e0e045ef640411" alt="bad Bunny">
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02bbd45c8d36e0e045ef640411" alt="bad Bunny">
               <h3>deBÍ TiRAR MáS FOToS</h3>
-              <p>bad Bunny</p>
+              <p>Bad Bunny</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
               <h3>BORONDO</h3>
               <p>beéle</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="" alt="">
-              <h3></h3>
-              <p>Artista</p>
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e023c4cddfe8890b8a9d4788fa3" alt="">
+              <h3>LO MISMO DE SIEMPRE</h3>
+              <p>Mora</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="" alt="">
-              <h3></h3>
-              <p>Artista</p>
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0249d694203245f241a1bcaa72" alt="">
+              <h3>Un Verano Sin Ti</h3>
+              <p>Bad Bunny</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="" alt="">
-              <h3></h3>
-              <p>Artista</p>
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e026abd0fcf50a20ac09a028c92" alt="">
+              <h3>LA CIUDAD</h3>
+              <p>Alleh, Yorghaki</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="" alt="">
-              <h3></h3>
-              <p>Artista</p>
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02996764071dbd5240eefb2422" alt="">
+              <h3>PRIMERA MUSA</h3>
+              <p>Omar Courtz</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="" alt="">
-              <h3></h3>
-              <p>Artista</p>
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02b2c0e9901d01c15c4cf8fed6" alt="">
+              <h3>Private Suite (Vol.2)</h3>
+              <p>ROA</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="" alt="">
-              <h3></h3>
-              <p>Artista</p>
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02ed432d7df981360768dd5856" alt="">
+              <h3>Cosa Nuestra</h3>
+              <p>Rauw Alejandro</p>
             </div>
             <div>
-              <img class="w-[450px] rounded-[10px]" src="" alt="">
-              <h3></h3>
-              <p>Artista</p>
+              <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0282de1ca074ae63cb18fce335" alt="">
+              <h3>MAÑANA SERA BONITO</h3>
+              <p>KAROL G</p>
             </div>
           </div>
         </section>
       </section>
       <footer>
-        <div class="grid grid-cols-5 mt-[10px] gap-5 border-solid border-color[rgb(31,31,31,1)]">
+        <div class="grid grid-cols-2 md:grid-cols-5 mt-[10px] gap-5 border-solid border-color[rgb(31,31,31,1)]">
           <div>
             <p>Compañia</p>
             <p>Acerca de</p>
@@ -232,7 +242,7 @@
           <div>
             <p>Enlaces Utiles</p>
             <p>Ayuda</p>
-            <p> App móvil gratis</p>
+            <p>App móvil gratis</p>
           </div>
           <div>
             <p>Planes de Spotify</p>
@@ -248,20 +258,11 @@
             <img src="./svg/logoface.svg" alt="facelogo">
           </div>
         </div>
-        <div>
+        <div class="mt-20 mb-10">
           <p>© 2025 Spotify AB</p>
         </div>
       </footer>
     </section>
   </main>
-  <div class=" flex justify-between p-[5px] pr-[30px]">
-      <div>
-        <p>Muestra de Spotify</p>
-        <p>Registrate para acceder a canciones y podcast ilimitados con algunos anuncios. No necesitas tarjeta de crédito</p>
-      </div>
-      <div class="flex justify-center items-center">
-        <button>Registrate gratis</button>
-      </div>
-    </div>
 </body>
 </html>
