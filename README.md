@@ -1,2 +1,2 @@
-# fake-spotifive
+# fake-spotify
 proyecto con fines educativos
