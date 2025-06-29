@@ -21,19 +21,19 @@
       </div>
     </div>
     <div class="flex justify-center items-center gap-[10px]"> <!--nav__izquierda-1-->
-      <div class="hidden lg:flex lg:justify-center lg:items-center lg:gap-[6px]">
+      <div class="hidden lg:flex lg:justify-center lg:items-center lg:gap-[4px] lg:text-[15px]">
         <p>Premium</p>
         <p>Ayuda</p>
         <p>Descargar</p>
         <p>|</p>
       </div>
       <div class="flex justify-center items-center gap-[15px]">  <!--nav__izquierda-2-->
-        <div class="flex justify-center items-center gap-[3px] text-[12px]">
+        <div class="hidden md:flex md:justify-center md:items-center md:gap-[5px] md:text-[12px]">
           <span class="material-symbols-outlined">arrow_circle_down</span>
           <p>Instalar Aplicacion</p>
         </div>
         <p>Registrate</p>
-        <div class="bg-white p-[12px] py-[10px] px-[26px] text-black rounded-[25px] md:my-[2px]">
+        <div class="bg-white py-[10px] px-[26px] text-black rounded-[25px] my-[2px] mr-[2px]">
           <p>Iniciar sesión</p>
         </div>
       </div>
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:grid md:grid-cols-3 md:mt-20 md:text-[12px] md:px-[15px] md:gap-2">
+      <div class="hidden md:grid md:grid-cols-3 md:mt-20 md:text-[10px] lg:text-[13px] md:px-[15px] md:gap-2">
         <p>Legal</p>
         <p>Seguridad y centro de privacidad</p>
         <p>Politica de privacidad</p>
@@ -70,11 +70,11 @@
         <p>Accesibilidad</p>
         <p class="text-white font-medium">Cookies</p>
       </div>
-      <div class="hidden md:flex md:bg-[rgb(41,41,41,1)] border-color-white md:rounded-[25px] md:mr-[100px] md:ml-[20px]  md:mt-10 ">
-        <button class="flex justify-center items-center p-[5px] text-white"><span class="material-symbols-outlined">language</span>Español de Latinoamerica</button>
+      <div class="hidden md:flex md:justify-center md:items-center md:border-1 md:border-white md:rounded-[25px] md:mx-[60px] md:mt-10 text-[6px] lg:text-[14px] ">
+        <button class="flex justify-center items-center px-[7px] py-[5px] text-white"><span class="material-symbols-outlined">language</span>Español de Latinoamerica</button>
       </div>
     </section> <!--lado-izquierdo__fin-->
-    <section class="flex flex-col min-h-[100px] min-w-[100px] overflow-y-auto md:pl-[10px]  bg-[rgb(18,18,18,1)] rounded-[5px] contenedor"><!--lado-derecho__indicio-->
+    <section class="flex flex-col min-h-[100px] min-w-[100px] overflow-y-auto md:pl-[10px] bg-[rgb(18,18,18,1)] rounded-[5px] contenedor"><!--lado-derecho__indicio-->
       <section class="mb-10">
         <div class="flex justify-between items-center p-[10px]">
           <h2 class="text-[25px] font-bold text-white">Canciones del momento</h2>
@@ -120,7 +120,7 @@
       </section>
       <section class=" mb-10">
         <div class="flex justify-between items-center p-[10px]">
-          <h2 class="text-[25px] font-bold text-white ">Artistas populares</h2>
+          <h2 class="text-[25px] w-[100%] font-bold text-white ">Artistas populares</h2>
           <p>mostrar todo</p>
         </div>
         <div class="flex flex-row gap-[20px] px-[5px] items-center overflow-x-scroll contenedor">
@@ -214,7 +214,7 @@
           </div>
         </div>
       </section>
-      <section class="grid grid-cols-2 md:grid-cols-5 mt-[10px] gap-5 border-1 border-transparent border-t-[rgb(31,31,31,1)] pt-20">
+      <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mt-[10px] gap-5 border-1 border-transparent border-t-[rgb(31,31,31,1)] pt-20">
         <div>
           <p class="text-white font-medium">Compañia</p>
           <p>Acerca de</p>
@@ -255,12 +255,12 @@
     </section>
   </main>
   <footer class="bg-blue-500">
-    <div class="flex text-white justify-between items-center p-[5px] py-[10px] pr-[30px] bg-linear-to-r from-[rgb(175,40,150,1)] to-[rgb(80,155,245,1)]"> <!--prueba-gratis__indicio-->
+    <div class="flex text-white justify-between items-center py-[10px] pr-[15px] bg-linear-to-r from-[rgb(175,40,150,1)] to-[rgb(80,155,245,1)]"> <!--prueba-gratis__indicio-->
     <div>
       <p>Muestra de Spotify</p>
       <p class="hidden md:inline">Registrate para acceder a canciones y podcast ilimitados con algunos anuncios.<samp class="md: hidden lg:inline"> No necesitas tarjeta de crédito</samp></p>
     </div>
-    <div class="flex justify-center items-end bg-white p-[12px] px-[36px] md:px-[36px] text-black rounded-[25px] font-bold">
+    <div class="flex justify-center items-end bg-white p-[12px] md:px-[6px] text-black rounded-[25px] font-bold">
       <button>Registrate gratis</button>
     </div> <!--prueba-gratis__fin-->
   </div>
