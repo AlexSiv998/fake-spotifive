@@ -11,29 +11,29 @@
 <body class="text-stone-400 bg-black grid grid-row-[10px_1fr_10px] w-full h-screen gap-2">
   <nav class="flex flex-row justify-between items-center font-bold">
     <div class=" flex justify-center items-center gap-[3px] pl-[10px]"> <!--nav__derecha-->
-      <div class="w-10 h-10"> <img src="./svg/logo.svg" alt=""></div>
-      <div class=" hidden md:flex md:justify-center md:items-center md:rounded-full w-16 h-16 "><span class="material-symbols-outlined">home</span></div>
-      <div class="flex items-center bg-[rgb(31,31,31,1)] gap-[10px] rounded-[20px] p-[10px]">
-        <span class="material-symbols-outlined">search</span>
+      <div class="w-10 h-10 cursor-pointer"> <img src="./svg/logo.svg" alt=""></div>
+      <div class="hidden md:flex md:justify-center md:items-center md:rounded-full w-13 h-13 hover:bg-[rgb(31,31,31,1)] hover:text-white cursor-pointer"><span class="material-symbols-outlined">home</span></div>
+      <div class="flex items-center bg-[rgb(31,31,31,1)] gap-[10px] rounded-[20px] p-[10px] active:border-1  cursor-pointer">
+        <span class="material-symbols-outlined hover:text-white ">search</span>
         <input class="hidden md:flex md:items-start md:border-none lg:pr-[90px]" placeholder="¿Que quieres reproducir?" type="text">
         <p class="hidden lg:inline">|</p>
         <div class="hidden lg:flex"><span class="material-symbols-outlined">web_stories</span></div>
       </div>
     </div>
     <div class="flex justify-center items-center gap-[10px]"> <!--nav__izquierda-1-->
-      <div class="hidden lg:flex lg:justify-center lg:items-center lg:gap-[4px] lg:text-[15px]">
-        <p>Premium</p>
-        <p>Ayuda</p>
-        <p>Descargar</p>
+      <div class="hidden lg:flex lg:justify-center lg:items-center lg:gap-[4px] lg:text-[15px] cursor-pointer">
+        <p class="hover:text-white hover:text-[16px]">Premium</p>
+        <p class="hover:text-white hover:text-[16px]">Ayuda</p>
+        <p class="hover:text-white hover:text-[16px]">Descargar</p>
         <p>|</p>
       </div>
-      <div class="flex justify-center items-center gap-[15px]">  <!--nav__izquierda-2-->
-        <div class="hidden md:flex md:justify-center md:items-center md:gap-[5px] md:text-[12px]">
+      <div class="flex justify-center items-center gap-[15px] cursor-pointer">  <!--nav__izquierda-2-->
+        <div class="hidden md:flex md:justify-center md:items-center md:gap-[5px] md:text-[12px] hover:text-white hover:text-[13px]">
           <span class="material-symbols-outlined">arrow_circle_down</span>
           <p>Instalar Aplicacion</p>
         </div>
-        <p>Registrate</p>
-        <div class="bg-white py-[10px] px-[26px] text-black rounded-[25px] my-[2px] mr-[2px]">
+        <p class="hover:text-white cursor-pointer hover:text-[17px]">Registrate</p>
+        <div class="bg-white py-[10px] px-[26px] text-black rounded-[25px] my-[2px] mr-[2px] hover:bg-gray-200 hover:text-[17px] cursor-pointer">
           <p>Iniciar sesión</p>
         </div>
       </div>
@@ -44,7 +44,7 @@
       <div class="md:text-white">
         <div class="md:flex md:justify-between md:p-[15px] md:mb-7">
           <h2 class="hidden md:inline font-bold">Tu Biblioteca</h2>
-          <div class="hidden md:inline">
+          <div class="hidden md:flex justify-center p-1 hover:bg-[rgb(31,31,31,1)] rounded-full cursor-pointer">
             <span class="material-symbols-outlined">add_2</span>
           </div>
         </div>
@@ -52,200 +52,200 @@
           <div class="hidden md:flex md:flex-col md:items-start md:bg-[rgb(41,41,41,1)] md:rounded-[9px] md:p-4 md:gap-2">
             <h2 class="font-medium">Crea tu primera playlist</h2>
             <p class=" md:text-[13px]">!Es muy fácil¡ Te vamos a ayudar</p>
-            <button class="md:bg-white md:p-[2px] md:px-[10px] md:text-black md:rounded-[25px] md:mt-3 font-semibold">Crear playlist</button>
+            <button class="md:bg-white md:p-[2px] md:px-[10px] md:text-black md:rounded-[25px] md:mt-3 font-semibold hover:bg-gray-200 hover:text-[17px] cursor-pointer">Crear playlist</button>
           </div>
           <div class="hidden md:flex md:flex-col md:items-start md:bg-[rgb(41,41,41,1)] md:rounded-[9px] md:p-4 md:gap-2">
             <h2 class="font-medium">Busquemos algunos podcast para seguir</h2>
             <p class="md:text-[13px]"> Te mantendremos al tanto de los nuevos episodios.</p>
-            <button class="md:bg-white md:p-[2px] md:px-[10px] md:text-black md:rounded-[25px] md:mt-3 font-semibold">Explorar podcast</button>
+            <button class="md:bg-white md:p-[2px] md:px-[10px] md:text-black md:rounded-[25px] md:mt-3 font-semibold hover:bg-gray-200 cursor-pointer hover:text-[17px]">Explorar podcast</button>
           </div>
         </div>
       </div>
       <div class="hidden md:grid md:grid-cols-3 md:mt-20 md:text-[10px] lg:text-[13px] md:px-[15px] md:gap-2">
-        <p>Legal</p>
-        <p>Seguridad y centro de privacidad</p>
-        <p>Politica de privacidad</p>
-        <p>Cookies</p>
-        <p>Sobre los anuncios</p>
-        <p>Accesibilidad</p>
-        <p class="text-white font-medium">Cookies</p>
+        <p class="cursor-pointer">Legal</p>
+        <p class="cursor-pointer">Seguridad y centro de privacidad</p>
+        <p class="cursor-pointer">Politica de privacidad</p>
+        <p class="cursor-pointer">Cookies</p>
+        <p class="cursor-pointer">Sobre los anuncios</p>
+        <p class="cursor-pointer">Accesibilidad</p>
+        <p class="text-white font-medium hover:text-white hover:underline decoration-white ">Cookies</p>
       </div>
-      <div class="hidden md:flex md:justify-center md:items-center md:border-1 md:border-white md:rounded-[25px] md:mx-[60px] md:mt-10 text-[6px] lg:text-[14px] ">
-        <button class="flex justify-center items-center px-[7px] py-[5px] text-white"><span class="material-symbols-outlined">language</span>Español de Latinoamerica</button>
+      <div class="hidden md:flex md:justify-center md:items-center md:border-1 md:border-white md:rounded-[25px] md:mx-[60px] md:mt-10 text-[6px] lg:text-[14px] hover:text-[15px] cursor-pointer">
+        <button class="flex justify-center items-center px-[7px] py-[5px] text-white cursor-pointer"><span class="material-symbols-outlined">language</span>Español de Latinoamerica</button>
       </div>
     </section> <!--lado-izquierdo__fin-->
     <section class="flex flex-col min-h-[100px] min-w-[100px] overflow-y-auto md:pl-[10px] bg-[rgb(18,18,18,1)] rounded-[5px] contenedor"><!--lado-derecho__indicio-->
       <section class="mb-10">
         <div class="flex justify-between items-center p-[10px]">
-          <h2 class="text-[25px] font-bold text-white">Canciones del momento</h2>
-          <p>mostrar todo</p>
+          <h2 class="text-[25px] font-bold text-white hover:underline decoration-white">Canciones del momento</h2>
+          <p class="hover:underline decoration-gray-200">mostrar todo</p>
         </div>
-        <div class="flex flex-row gap-[15px] overflow-x-scroll contenedor">
-          <div>
+        <div class="flex flex-row  overflow-x-scroll contenedor">
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
             <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02701df427a61dc4eb670a6cd9" alt="">
-            <h3 class="text-white font-semibold">la culpa (track 11)</h3>
-            <p>Alleh,Yorghaki</p>
+            <h3 class="text-white font-semibold hover:underline decoration-white">la culpa (track 11)</h3>
+            <p class="hover:underline decoration-white">Alleh,Yorghaki</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
             <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e025ecdb62da0b88c3e0091cae7" alt="">
-            <h3 class="text-white font-semibold">Mi Viejo</h3>
-            <p>Vicente Fernández</p>
+            <h3 class="text-white font-semibold hover:underline decoration-white">Mi Viejo</h3>
+            <p class="hover:underline decoration-white">Vicente Fernández</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
             <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e027e3722344b0226b81ae8b50c" alt="">
-            <h3 class="text-white font-semibold">YO y TÚ</h3>
-            <p>Ovy On The Drums, Quevedo, Beéle</p>
+            <h3 class="text-white font-semibold hover:underline decoration-white">YO y TÚ</h3>
+            <p class="hover:underline decoration-white">Ovy On The Drums, Quevedo, Beéle</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
             <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0243e5cd64457274893643336d" alt="">
-            <h3 class="text-white font-semibold">Mi Viejo</h3>
-            <p>Piero</p>
+            <h3 class="text-white font-semibold hover:underline decoration-white">Mi Viejo</h3>
+            <p class="hover:underline decoration-white">Piero</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
             <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02d4d5c6bf0536bc4df8cfca2f" alt="">
-            <h3 class="text-white font-semibold">Killin' It Girl (feat. GloRilla)</h3>
-            <p>j-hope, GloRilla</p>
+            <h3 class="text-white font-semibold hover:underline decoration-white">Killin' It Girl (feat. GloRilla)</h3>
+            <p class="hover:underline decoration-white">j-hope, GloRilla</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
             <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
-            <h3 class="text-white font-semibold">top diesel</h3>
-            <p>beéle</p>
+            <h3 class="text-white font-semibold hover:underline decoration-white">top diesel</h3>
+            <p class="hover:underline decoration-white">beéle</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
             <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02071805b326f22662cda09357" alt="">
-            <h3 class="text-white font-semibold">LOKENECESITAS</h3>
-            <p>SAIKO, Omar Courtz</p>
+            <h3 class="text-white font-semibold hover:underline decoration-white">LOKENECESITAS</h3>
+            <p class="hover:underline decoration-white">SAIKO, <samp>Omar Courtz</samp></p>
           </div>
         </div>
       </section>
       <section class=" mb-10">
         <div class="flex justify-between items-center p-[10px]">
-          <h2 class="text-[25px] w-[100%] font-bold text-white ">Artistas populares</h2>
-          <p>mostrar todo</p>
+          <h2 class="text-[25px] font-bold text-white hover:underline decoration-white">Artistas populares</h2>
+          <p class="hover:underline decoration-gray-200">mostrar todo</p>
         </div>
         <div class="flex flex-row gap-[20px] px-[5px] items-center overflow-x-scroll contenedor">
-          <div>
-            <img class="min-w-[100px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab6761610000517481f47f44084e0a09b5f0fa13" alt="">
-            <h2 class="text-white font-semibold">Bad Bunny</h2>
-            <p>Artista</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2">
+            <img class="min-w-[100px] w-[100%] rounded-full " src="https://i.scdn.co/image/ab6761610000517481f47f44084e0a09b5f0fa13" alt="">
+            <h2 class="text-white font-semibold hover:underline decoration-white">Bad Bunny</h2>
+            <p class="hover:underline decoration-white">Artista</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2">
             <img class="min-w-[100px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab6761610000517466041ce9eb4497057cbc3496" alt="">
-            <h2 class="text-white font-semibold">KAROL G</h2>
-            <p>Artista</p>
+            <h2 class="text-white font-semibold hover:underline decoration-white">KAROL G</h2>
+            <p class="hover:underline decoration-white">Artista</p>
             </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2">
             <img class="min-w-[100px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051745b50fae60980240b4ebd7808" alt="">
-            <h2 class="text-white font-semibold">Rauw Alejandro</h2>
-            <p>Artista</p>
+            <h2 class="text-white font-semibold hover:underline decoration-white">Rauw Alejandro</h2>
+            <p class="hover:underline decoration-white">Artista</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2">
             <img class="min-w-[100px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051748e10d05db45e77a86256fc5d" alt="">
-            <h2 class="text-white font-semibold">Beéle</h2>
-            <p>Artista</p>
+            <h2 class="text-white font-semibold hover:underline decoration-white">Beéle</h2>
+            <p class="hover:underline decoration-white">Artista</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2">
             <img class="min-w-[100px] min-h-[100px] w-[100%] h-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051744a350b04a3f9bb77a30b004e" alt="">
-            <h2 class="text-white font-semibold">J Balvin</h2>
-            <p>Artista</p>
+            <h2 class="text-white font-semibold hover:underline decoration-white">J Balvin</h2>
+            <p class="hover:underline decoration-white">Artista</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2">
             <img class="min-w-[100px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab67616100005174e6252cc367480d8fe43e711f" alt="">
-            <h2 class="text-white font-semibold">Mora</h2>
-            <p>Artista</p>
+            <h2 class="text-white font-semibold hover:underline decoration-white">Mora</h2>
+            <p class="hover:underline decoration-white">Artista</p>
           </div>
-          <div>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2">
             <img class="min-w-[100px] w-[100%] rounded-full" src="https://i.scdn.co/image/ab676161000051743b02770b21517dc3a03e340d" alt="">
-            <h2 class="text-white font-semibold">Danny Ocean</h2>
-            <p>Artista</p>
+            <h2 class="text-white font-semibold  hover:underline decoration-white">Danny Ocean</h2>
+            <p class="hover:underline decoration-white">Artista</p>
           </div>
         </div>
       </section>
       <section class=" mt-10">
         <div class="flex justify-between items-center p-[10px]">
-          <h2 class="text-[25px] font-bold text-white">Álbunes y sencillos populares</h2>
-          <p>mostrar todo</p>
+          <h2 class="text-[25px] font-bold text-white hover:underline decoration-white">Álbunes y sencillos populares</h2>
+          <p class="hover:underline decoration-gray-200">mostrar todo</p>
         </div>
-        <div class="flex flex-row gap-[15px] overflow-x-scroll contenedor" >
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02bbd45c8d36e0e045ef640411" alt="bad Bunny">
-            <h3 class="text-white font-semibold">deBÍ TiRAR MáS FOToS</h3>
-            <p>Bad Bunny</p>
+        <div class="flex flex-row overflow-x-scroll contenedor" >
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02bbd45c8d36e0e045ef640411" alt="bad Bunny">
+            <h3 class="text-white font-semibold hover:underline decoration-white">deBÍ TiRAR MáS FOToS</h3>
+            <p class="hover:underline decoration-white">Bad Bunny</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
-            <h3 class="text-white font-semibold">BORONDO</h3>
-            <p>beéle</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02a346fc13b57ac8af62b59c0a" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">BORONDO</h3>
+            <p class="hover:underline decoration-white">beéle</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e023c4cddfe8890b8a9d4788fa3" alt="">
-            <h3 class="text-white font-semibold">LO MISMO DE SIEMPRE</h3>
-            <p>Mora</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e023c4cddfe8890b8a9d4788fa3" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">LO MISMO DE SIEMPRE</h3>
+            <p class="hover:underline decoration-white">Mora</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0249d694203245f241a1bcaa72" alt="">
-            <h3 class="text-white font-semibold">Un Verano Sin Ti</h3>
-            <p>Bad Bunny</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0249d694203245f241a1bcaa72" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">Un Verano Sin Ti</h3>
+            <p class="hover:underline decoration-white">Bad Bunny</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e026abd0fcf50a20ac09a028c92" alt="">
-            <h3 class="text-white font-semibold">LA CIUDAD</h3>
-            <p>Alleh, Yorghaki</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e026abd0fcf50a20ac09a028c92" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">LA CIUDAD</h3>
+            <p class="hover:underline decoration-white">Alleh, Yorghaki</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02996764071dbd5240eefb2422" alt="">
-            <h3 class="text-white font-semibold">PRIMERA MUSA</h3>
-            <p>Omar Courtz</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02996764071dbd5240eefb2422" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">PRIMERA MUSA</h3>
+            <p class="hover:underline decoration-white">Omar Courtz</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02b2c0e9901d01c15c4cf8fed6" alt="">
-            <h3 class="text-white font-semibold">Private Suite (Vol.2)</h3>
-            <p>ROA</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02b2c0e9901d01c15c4cf8fed6" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">Private Suite (Vol.2)</h3>
+            <p class="hover:underline decoration-white">ROA</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02ed432d7df981360768dd5856" alt="">
-            <h3 class="text-white font-semibold">Cosa Nuestra</h3>
-            <p>Rauw Alejandro</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e02ed432d7df981360768dd5856" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">Cosa Nuestra</h3>
+            <p class="hover:underline decoration-white">Rauw Alejandro</p>
           </div>
-          <div>
-            <img class="min-w-[150px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0282de1ca074ae63cb18fce335" alt="">
-            <h3 class="text-white font-semibold">MAÑANA SERA BONITO</h3>
-            <p>KAROL G</p>
+          <div class="hover:bg-[rgb(31,31,31,1)] rounded-[5px] p-2 cursor-pointer">
+            <img class="min-w-[175px] w-[100%] rounded-[10px]" src="https://i.scdn.co/image/ab67616d00001e0282de1ca074ae63cb18fce335" alt="">
+            <h3 class="text-white font-semibold hover:underline decoration-white">MAÑANA SERA BONITO</h3>
+            <p class="hover:underline decoration-white">KAROL G</p>
           </div>
         </div>
       </section>
       <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mt-[10px] gap-5 border-1 border-transparent border-t-[rgb(31,31,31,1)] pt-20">
         <div>
           <p class="text-white font-medium">Compañia</p>
-          <p>Acerca de</p>
-          <p>Empleo</p>
-          <p>For the Record</p>
+          <p class="hover:text-white hover:underline decoration-white">Acerca de</p>
+          <p class="hover:text-white hover:underline decoration-white">Empleo</p>
+          <p class="hover:text-white hover:underline decoration-white">For the Record</p>
         </div>
         <div>
           <p class="text-white font-medium">Comunidades</p>
-          <p>Para artistas</p>
-          <p>Desarrolladores</p>
-          <p>Publicidad</p>
-          <p>Inversionistas</p>
-          <p>Proveedores</p>
+          <p class="hover:text-white hover:underline decoration-white">Para artistas</p>
+          <p class="hover:text-white hover:underline decoration-white">Desarrolladores</p>
+          <p class="hover:text-white hover:underline decoration-white">Publicidad</p>
+          <p class="hover:text-white hover:underline decoration-white">Inversionistas</p>
+          <p class="hover:text-white hover:underline decoration-white">Proveedores</p>
         </div>
         <div>
           <p class="text-white font-medium">Enlaces Utiles</p>
-          <p>Ayuda</p>
-          <p>App móvil gratis</p>
+          <p class="hover:text-white hover:underline decoration-white">Ayuda</p>
+          <p class="hover:text-white hover:underline decoration-white">App móvil gratis</p>
         </div>
         <div>
           <p class="text-white font-medium">Planes de Spotify</p>
-          <p>Premium Individual</p>
-          <p>Premium Duo</p>
-          <p>Premium </p>
-          <p>Premium Familiar</p>
-          <p>Versión gratuita</p>
+          <p class="hover:text-white hover:underline decoration-white">Premium Individual</p>
+          <p class="hover:text-white hover:underline decoration-white">Premium Duo</p>
+          <p class="hover:text-white hover:underline decoration-white">Premium </p>
+          <p class="hover:text-white hover:underline decoration-white">Premium Familiar</p>
+          <p class="hover:text-white hover:underline decoration-white">Versión gratuita</p>
         </div>
-        <div class="flex flex-row h-10 w-10 bg-[rgb(31,31,31,1)] rounded-[25px] p-[5px] gap-5">
-          <img src="./svg/logotwitter.svg" alt="xlogo">
-          <img src="./svg/logoinsta.svg" alt="intalogo">
-          <img src="./svg/logoface.svg" alt="facelogo">
+        <div class="flex flex-row h-10 w-10 gap-5 cursor-pointer">
+          <img class="hover:bg-[rgb(31,31,31,1)] rounded-[25px] p-[9px]" src="./svg/logotwitter.svg" alt="xlogo">
+          <img class="hover:bg-[rgb(31,31,31,1)] rounded-[25px] p-[9px]" src="./svg/logoinsta.svg" alt="intalogo">
+          <img class="hover:bg-[rgb(31,31,31,1)] rounded-[25px] p-[9px]" src="./svg/logoface.svg" alt="facelogo">
         </div>
         </div>
         <div class="mt-20 mb-10 ">
@@ -254,16 +254,14 @@
       </section>
     </section>
   </main>
-  <footer class="bg-blue-500">
-    <div class="flex text-white justify-between items-center py-[10px] pr-[15px] bg-linear-to-r from-[rgb(175,40,150,1)] to-[rgb(80,155,245,1)]"> <!--prueba-gratis__indicio-->
+  <footer class="flex text-white justify-between items-center py-[10px] pr-[15px] bg-linear-to-r from-[rgb(175,40,150,1)] to-[rgb(80,155,245,1)] cursor-pointer"> <!--prueba-gratis__indicio-->
     <div>
       <p>Muestra de Spotify</p>
       <p class="hidden md:inline">Registrate para acceder a canciones y podcast ilimitados con algunos anuncios.<samp class="md: hidden lg:inline"> No necesitas tarjeta de crédito</samp></p>
     </div>
-    <div class="flex justify-center items-end bg-white p-[12px] md:px-[6px] text-black rounded-[25px] font-bold">
-      <button>Registrate gratis</button>
+    <div class="flex justify-center items-end bg-white p-[12px] md:px-[6px] text-black rounded-[25px] font-bold hover:bg-gray-200 hover:text-[17px] cursor-pointer">
+      <button class="cursor-pointer">Registrate gratis</button>
     </div> <!--prueba-gratis__fin-->
-  </div>
   </footer>
 </body>
 </html>
